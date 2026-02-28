@@ -11,16 +11,16 @@ function CompanySlider({ }: Props) {
 
 
             <AutoPlaySlider
-                className='mt-20'
+                className='mt-20 container m-auto'
                 components={[
-                    <img src="/assets/company-logos/amazon.png" alt="Amazon" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/google.png" alt="Google" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/microsoft.png" alt="Microsoft" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/facebook.png" alt="Facebook" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/apple.png" alt="Apple" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/ibm.png" alt="IBM" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/oracle.png" alt="Oracle" className='w-40 grayscale' />,
-                    <img src="/assets/company-logos/salesforce.png" alt="Salesforce" className='w-40 grayscale' />,
+                    <img src="/placement-partners/airtel.png" alt="Airtel" className='h-15 grayscale' />,
+                    <img src="/placement-partners/wysetek.png" alt="Wysetek" className='h-15 grayscale' />,
+                    <img src="/placement-partners/acl digital.png" alt="ACL Digital" className='h-15 grayscale' />,
+                    <img src="/placement-partners/cohesive-technologies.png" alt="Cohesive Technologies" className='h-15 grayscale' />,
+                    <img src="/placement-partners/wipro.png" alt="Wipro" className='h-15 grayscale' />,
+                    <img src="/placement-partners/brisk.png" alt="Brisk" className='h-15 grayscale' />,
+                    <img src="/placement-partners/Cisco_logo-1000px (1).png" alt="Cisco" className='h-15 grayscale' />,
+                    <img src="/placement-partners/alphatec.png" alt="Alphatec" className='h-15 grayscale' />,
                 ]}
             />
         </div>

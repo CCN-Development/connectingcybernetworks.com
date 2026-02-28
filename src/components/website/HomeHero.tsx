@@ -10,7 +10,7 @@ type Props = {}
 
 function HomeHero({ }: Props) {
     return (
-        <div className="flex min-h-screen items-center flex-col gap-5 dark:bg-[url('/backgrounds/mainhero.png')] pt-30 md:pt-25 xl:pt-40 px-10" style={{
+        <div className=" relative flex min-h-screen items-center flex-col gap-5 bg-[url('/backgrounds/mainhero-dark.png')] dark:bg-[url('/backgrounds/mainhero.png')] pt-30 md:pt-25 lg: xl:pt-30 px-10 overflow-hidden" style={{
             backgroundSize: "cover",
             backgroundPosition: "center",
         }}>
@@ -59,9 +59,9 @@ function HomeHero({ }: Props) {
                     <div data-layer="24/7 Expert Support" className="7ExpertSupport justify-start text-zinc-800 dark:text-zinc-200 text-xs md:text-base font-medium leading-6">24/7 Expert Support</div>
                 </div>
             </div>
-            <div data-layer="Hero Title Text" data-property-1="Frame 427320814" className="HeroTitleText inline-flex justify-center flex-wrap items-center gap-4 overflow-hidden z-1">
+            <div data-layer="Hero Title Text" data-property-1="Frame 427320814" className="HeroTitleText inline-flex justify-center flex-wrap items-center gap-4 z-1">
                 <div data-layer="Empowering You in" className="EmpoweringYouIn text-4xl md:text-6xl font-semibold ">Empowering You in</div>
-                <span className="text-rotate text-4xl md:text-6xl font-bold">
+                <span className="text-rotate text-4xl md:text-6xl font-bold ">
                     <span className="">
                         <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Cyber Security</span>
                         <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Ethical Hacking</span>
@@ -97,11 +97,11 @@ function HomeHero({ }: Props) {
                     borderWidth={2}
                     textBgColor="#000000"
                     textBgHoverColor="#000000"
-                    className='px-10 py-3'
+                    className='px-10 py-4'
                 />
                 <Button
                     variant="outline"
-                    className='px-20 has-[>svg]:py-4 has-[>svg]:px-10 rounded-full dark:bg-white dark:text-black dark:hover:bg-white'
+                    className='px-20 py-6 has-[>svg]:px-10 rounded-full dark:bg-white dark:text-black dark:hover:bg-white'
 
                 >
                     Explore Programs
@@ -111,8 +111,18 @@ function HomeHero({ }: Props) {
             </div>
 
 
-
-            <img src="/assets/shield.png" alt="Shield" className='animate-bounce duration-2000 w-36 absolute bottom-40 md:bottom-30' />
+            <div
+                className='absolute hidden dark:block inset-0 w-full h-full pointer-events-none z-0 bg-[linear-gradient(to_bottom,transparent_80%,rgba(0,0,0,0.9)_100%)]'
+            />
+            <img src="/assets/shield.png" alt="Shield" className='  animate-bounce duration-2000 w-40 dark:w-36 absolute bottom-40 dark:bottom-40 dark:md:bottom-30' />
+            <div className='dark:hidden' style={{
+                width: "6000px",
+                height: "6000px",
+                background:"white",
+                borderRadius:"50%",
+                position:"absolute",
+                top:"85%",
+            }}/>
         </div>
     )
 }

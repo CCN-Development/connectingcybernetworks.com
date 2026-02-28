@@ -1,3 +1,4 @@
+import Footer from '@/layout/Footer';
 import Header from '@/layout/Header';
 import React from 'react'
 
@@ -11,8 +12,7 @@ function MainLayout({
         <div>
             <Header />
             {children}
-            {children}
-            {children}
+            <Footer />
         </div>
     )
 }

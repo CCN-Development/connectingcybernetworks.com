@@ -164,7 +164,7 @@
 	--popover: var(--color-white);
 	--popover-foreground: var(--color-neutral-900);
 
-	--primary: var(--color-primary-600);
+	--primary: var(--color-primary-700);
 	--primary-foreground: var(--color-white);
 
 	--secondary: var(--color-primary-50);
@@ -206,7 +206,7 @@
 	--popover: var(--color-neutral-800);
 	--popover-foreground: var(--color-neutral-50);
 
-	--primary: var(--color-primary-400);
+	--primary: var(--color-primary-700);
 	--primary-foreground: var(--color-neutral-900);
 
 	--secondary: var(--color-neutral-700);
@@ -251,8 +251,18 @@
 
 *{
 	/* outline: 1px solid red !important; */
+	font-family: "Lato", sans-serif;
 }
 
 button,a{
 	cursor: pointer;
+}
+
+body{
+	max-width: 100vw;
+	overflow-x: hidden;
+	/* background: white; */
+}
+body.dark{
+	/* background: black; */
 }

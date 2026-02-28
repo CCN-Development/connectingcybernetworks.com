@@ -19,11 +19,11 @@ function AutoPlaySlider({
 
     return (
         <div className={`relative w-full overflow-hidden ${className}`}>
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 z-10 bg-linear-to-r from-base-100 to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 z-10 bg-linear-to-l from-base-100 to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-16 z-10 bg-linear-to-r from-white dark:from-black to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-16 z-10 bg-linear-to-l from-white dark:from-black to-transparent" />
 
             <div
-                className={`flex w-max ${pauseOnHover ? 'hover:paused' : ''}`}
+                className={`flex items-center w-max ${pauseOnHover ? 'hover:paused' : ''}`}
                 style={{
                     gap: `${gap}px`,
                     animation: `marquee ${duration}s linear infinite`,

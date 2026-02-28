@@ -136,7 +136,7 @@ function DesktopDropdown({ item }: { item: NavItem & { children: NavChild[] } })
     }, []);
 
     return (
-        <div ref={ref} className="relative"
+        <div ref={ref} className="relative "
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
         >
@@ -157,8 +157,8 @@ function DesktopDropdown({ item }: { item: NavItem & { children: NavChild[] } })
             </button>
 
             {open && (
-                <div className="absolute top-full  w-80 z-50 rounded-sm animate-in fade-in slide-in-from-top-50 duration-150 ">
-                    <div className="rounded-2xl backdrop-blur-2xl shadow-2xl overflow-hidden p-2">
+                <div className="absolute top-full  w-80 z-50 rounded-xs animate-in fade-in slide-in-from-top-50 duration-150 ">
+                    <div className="rounded-sm backdrop-blur-2xl shadow-2xl overflow-hidden p-2">
                         <ul className="space-y-0.5">
                             {item.children.map((child) => (
                                 <DropdownItem key={child.href} item={child} onClose={() => setOpen(false)} />
@@ -192,13 +192,13 @@ function MobileNavItem({ item, onClose }: { item: NavItem; onClose: () => void }
         <li>
             <button
                 onClick={() => setOpen((v) => !v)}
-                className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-base-content/80 hover:text-base-content hover:bg-white/5 rounded-xl transition-colors"
+                className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-base-content/80 hover:text-base-content hover:bg-white/5 rounded-md transition-colors"
             >
                 {item.label}
                 <ChevronDown size={14} className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
             </button>
             {open && (
-                <ul className="ml-2 mt-1 space-y-0.5 border-l-2 border-white/10 pl-3">
+                <ul className="ml-2 bg-white/5 backdrop-blur-3xl mt-1 space-y-0.5 border-l-2 border-white/10 pl-3">
                     {item.children.map((child) => {
                         const Icon = child.icon;
                         return (
@@ -242,6 +242,7 @@ function Header() {
                 : "bg-transparent"
                 }`}
         >
+            <div className="absolute inset-0 backdrop-blur-xl bg-base-100/10 -z-10 pointer-events-none" />
             <div className="navbar flex justify-between max-w-7xl mx-auto px-4 lg:px-6 min-h-17">
                 <div className="">
                     <Link href="/" className="shrink-0">

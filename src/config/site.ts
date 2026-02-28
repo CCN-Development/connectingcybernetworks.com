@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "Connecting Cyber Networks",
-    url: "https://ccnp.connectingcybernetworks.com",
+    url: "https://connectingcybernetworks.com",
     description: "Enroll in job-guaranteed programs at Connecting Cyber Networks. Master IT skills in cybersecurity, networking, and more, with 100% placement assistance in Mumbai.",
     keywords: [
         "job guaranteed programs",

@@ -1,4 +1,5 @@
 import { TooltipProvider } from '@/components/ui/tooltip';
+import PrivacyContext from '@/context/PrivacyContext';
 import { ThemeProvider } from '@/context/ThemeProvider';
 import React from 'react'
 type Props = {
@@ -10,14 +11,15 @@ function Providers({ children }: Props) {
         <>
             <ThemeProvider
                 attribute="class"
-                defaultTheme="system"
+                defaultTheme="dark"
                 enableSystem
                 disableTransitionOnChange
             >
-
-                <TooltipProvider>
-                    {children}
-                </TooltipProvider>
+                <PrivacyContext>
+                    <TooltipProvider>
+                        {children}
+                    </TooltipProvider>
+                </PrivacyContext>
             </ThemeProvider>
         </>
     )
