@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         countryName: 'India',
         images: [
             {
-                url: `${siteConfig.url}/images/CCN-Favicon.png`,
+                url: `https://accounts.connectingcybernetwork.com/backgrounds%2Fauth%2Flogin-bg.png`,
                 width: 800,
                 height: 600,
                 alt: siteConfig.name,

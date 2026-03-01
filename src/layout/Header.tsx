@@ -315,7 +315,7 @@ function Header() {
                         </Link>
 
                         <Link
-                            href="/auth/login"
+                            href="https://lms.connectingcybernetworks.com"
                             onClick={() => setMobileOpen(false)}
                         >
                             <RotatingGradientButton text="Login" className="w-full"
@@ -365,7 +365,7 @@ function Header() {
                                 Book a Free Demo
                             </Link>
                             <Link
-                                href="/auth/login"
+                                href="https://lms.connectingcybernetworks.com"
                                 onClick={() => setMobileOpen(false)}
                             >
                                 <RotatingGradientButton text="Login" className="w-full"

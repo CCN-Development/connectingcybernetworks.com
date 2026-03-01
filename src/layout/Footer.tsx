@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 
 function Footer() {
     return (
-        <footer className="relative bg-black text-black dark:text-gray-300 overflow-hidden pt-10">
+        <footer className="relative dark:bg-black text-black dark:text-gray-300 overflow-hidden pt-10">
             {/* Layer 1 – Radial gradient blobs (bottom) */}
             <RadialGradientComb className='absolute top-[0%] left-[70%] w-[200px] h-[200px] rotate-120' />
 
@@ -16,7 +16,7 @@ function Footer() {
             <img src="/creatives/curverfooter.svg" className='absolute inset-0 w-full h-full object-cover z-10' alt="" />
 
             {/* Layer 3 – Linear gradient overlay */}
-            <div className="absolute inset-0 z-20 bg-gradient-to-b from-black/80 via-black/0 to-black/0" />
+            <div className="hidden dark:block absolute inset-0 z-20 bg-gradient-to-b from-black/80 via-black/0 to-black/0" />
 
             {/* Layer 4 – Footer content */}
             <div className="relative z-30 max-w-7xl mx-auto px-4 lg:px-6 pt-14 pb-8 h-full">

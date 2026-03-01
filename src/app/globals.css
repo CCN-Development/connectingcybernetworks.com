@@ -266,3 +266,12 @@ body{
 body.dark{
 	/* background: black; */
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
