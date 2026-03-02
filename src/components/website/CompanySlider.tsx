@@ -13,14 +13,14 @@ function CompanySlider({ }: Props) {
             <AutoPlaySlider
                 className='mt-20 container m-auto'
                 components={[
-                    <img src="/placement-partners/airtel.png" alt="Airtel" className='h-15 grayscale' />,
-                    <img src="/placement-partners/wysetek.png" alt="Wysetek" className='h-15 grayscale' />,
-                    <img src="/placement-partners/acl digital.png" alt="ACL Digital" className='h-15 grayscale' />,
-                    <img src="/placement-partners/cohesive-technologies.png" alt="Cohesive Technologies" className='h-15 grayscale' />,
-                    <img src="/placement-partners/wipro.png" alt="Wipro" className='h-15 grayscale' />,
-                    <img src="/placement-partners/brisk.png" alt="Brisk" className='h-15 grayscale' />,
-                    <img src="/placement-partners/Cisco_logo-1000px (1).png" alt="Cisco" className='h-15 grayscale' />,
-                    <img src="/placement-partners/alphatec.png" alt="Alphatec" className='h-15 grayscale' />,
+                    <img src="/placement-partners/airtel.png" alt="Airtel" className='h-15 ' />,
+                    <img src="/placement-partners/wysetek.png" alt="Wysetek" className='h-15 ' />,
+                    <img src="/placement-partners/acl digital.png" alt="ACL Digital" className='h-15 ' />,
+                    <img src="/placement-partners/cohesive-technologies.png" alt="Cohesive Technologies" className='h-15 ' />,
+                    <img src="/placement-partners/wipro.png" alt="Wipro" className='h-15 ' />,
+                    <img src="/placement-partners/brisk.png" alt="Brisk" className='h-15 ' />,
+                    <img src="/placement-partners/Cisco_logo-1000px (1).png" alt="Cisco" className='h-15 ' />,
+                    <img src="/placement-partners/alphatec.png" alt="Alphatec" className='h-15 ' />,
                 ]}
             />
         </div>

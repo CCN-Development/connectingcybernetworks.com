@@ -66,9 +66,10 @@ function HomeHero({ }: Props) {
                         <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Cyber Security</span>
                         <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Ethical Hacking</span>
                         <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Networking</span>
-                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>CCNA</span>
-                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Palo Alto</span>
-                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Checkpoint</span>
+                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Network Security</span>
+                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Penetration Testing</span>
+                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Cyber Forensics</span>
+                        <span className='bg-linear-to-b from-[#426ACC] to-[#8EAFFF] bg-clip-text text-transparent'>Bug Bounty</span>
                     </span>
                 </span>
             </div>

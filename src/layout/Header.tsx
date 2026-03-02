@@ -41,9 +41,9 @@ type NavItem =
     | { label: string; href?: undefined; children: NavChild[] };
 
 const navItems: NavItem[] = [
-    { label: "Home", href: "/" },
+    // { label: "Home", href: "/" },
     {
-        label: "Programs",
+        label: "Training",
         children: [
             {
                 icon: ShieldCheck,
